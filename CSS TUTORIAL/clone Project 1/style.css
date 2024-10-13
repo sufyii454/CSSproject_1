@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-color: #0c1f2f;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Semi-transparent overlay */
+.main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('D:/WEB%20DEVELOPER/CSS%20IMG/img%204.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    /* Sets the opacity of the background image */
+    z-index: 1;
+    /* Places the overlay behind the content */
+}
+
+/* Content inside the container */
+.main1 {
+    position: relative;
+    z-index: 4;
+    /* Ensures content is above the overlay */
+    color: rgb(12, 12, 12);
+    /* Adjust text color if needed */
+}
+
+.nav {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projectdesign img{
+    margin: 20px;
+    width: 200px;
+    height: 100px;
+    border-radius: 15px 50px;
+    
+}
+
+.list{
+    display: flex;
+    align-items: center;
+}
+
+.list ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list li {
+    display: inline;
+}
+
+
+button,
+select {
+    font-size: 20px;
+    border: 2px solid rgb(2 2 2);
+    padding: 10px 15px;
+    margin: 4px;
+    background-color: #9fcdf3;
+    color: #040404;
+    font-family: "Gill Sans Extrabold", sans-serif;
+}
+
+.subnav {
+    color: rgb(2, 2, 2);
+    text-align: center;
+    font-family: cursive;
+    margin-top: 450px;
+    position: relative;
+    margin-left: auto;
+}
+.seperation{
+    height: 5px;
+    background-color: rgb(116, 115, 115);
+    position: relative;
+}
+
+.sec1 {
+    display: flex;
+    max-width: 86vw;
+    margin: auto;
+    justify-content: center;
+}
+
+.first {
+    max-width: auto;
+    margin: auto;
+    padding: 20px;
+    color: aliceblue;
+    font-size: 27px;
+}
+
+.imgsec img {
+    border-radius: 3%;
+    margin: 40px 0px;
+}
+
+.first p {
+    font-size: 22px;
+    padding: 15px;
+}
+
+.container h1 {
+    color: #f7f7f7;
+    margin: 10px;
+    padding: 10px;
+}
+
+.title_and_img {
+    display: flex;
+    position: relative;
+    border: 2px solid rgb(9, 13, 71);
+    background-color: rgb(126 255 255);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    margin: 10px;
+    font-size: large;
+}
+
+.img1 img {
+    display: inline-block;
+    background-color: rgb(126 255 255);
+    margin: 10px;
+}
+
+.information {
+    position: absolute;
+    top: 30px;
+    /* Adjust position as needed */
+    left: 0;
+    display: none;
+    z-index: 1;
+    font-size: large;
+    /* Background color for visibility */
+    background-color: #0c1f2f;
+    color: #f7f5f5;
+    padding: 10px;
+    /* Padding for content */
+    border: 1px solid #ccc;
+    /* Optional border */
+    margin-top: 35px;
+}
+
+.img1:hover+.information {
+    display: block;
+}
+
+.sublast {
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+    color: aliceblue;
+    padding: 10px;
+}
+
+#id2 {
+    font-size: 20px;
+    border: 2px solid rgb(2 2 2);
+    padding: 10px 15px;
+    margin: 4px;
+    color: #040404;
+    font-family: "Gill Sans Extrabold", sans-serif;
+    background-color: #afafaf;
+}
+
+.icons{
+    margin: 20px;
+    height: 37px;
+    font-size: 25px;
+    text-align: center;
+    color: #6b6868;
+}
+
+footer {
+    font-size: small;
+    color: #b3b0b0;
+    text-align: center;
+}
+
+footer p {
+    
+    font-size: 17px;
+}
+
+.column {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+}
+
+.column .col-1,.col-2,.col-3,.col-4{
+    margin: 10px;
+    padding: 10px;
+}
+
+.column li{
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+.col-1 ul,
+.col-2 ul,
+.col-3 ul,
+.col-4 ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    text-align: start;
+} 
+
+.col-1,
+.col-2,
+.col-3,
+.col-4  {
+    width: 25%;
+}

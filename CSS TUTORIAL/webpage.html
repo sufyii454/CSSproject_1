@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="png" href="D:/WEB%20DEVELOPER/CSS%20IMG/design%20icon.png">
+    <title>DESIGNS-Webpage</title>
+
+    <style>
+        .logo {
+            color: antiquewhite;
+            background-color: black;
+            font-family: "Brush Script MT", cursive;
+        }
+/* 
+        .navbar{
+            background-color: black;
+            display: flex;
+        } */
+
+        .navbar li {
+            list-style-type: none;
+            display: inline-block;
+            font-size: 30px;
+            padding: 6px;
+            margin: auto;
+        }
+
+        .navbar li a:link,
+        a:visited {
+            text-decoration: none;
+            color: bisque;
+        }
+
+        .navbar li a:hover,
+        a:active {
+            background-color: rgb(51, 51, 51);
+            color: rgb(199, 200, 201);
+            border: 2px solid white;
+            padding: auto;
+            margin: auto;
+            border-radius: 3px;
+        }
+
+        .header {
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        body {
+            background-image: url('D:/WEB%20DEVELOPER/CSS%20IMG/mg%20img.jpg');
+            background-position: fixed;
+        }
+        .main{
+            margin: 10px;
+        }
+        footer {
+            background-color: rgb(39, 39, 39);
+            color: aliceblue;
+        }
+
+        .img1 {
+            display: flex;
+            float: right;
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+
+        .content {
+            display: table-cell;
+        }
+
+        main p {
+            font-size: 25px;
+        }
+
+        .content2 {
+            font-family: "Brush Script MT", cursive;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            position: absolute;
+            background-color: aliceblue;
+            display: none;
+            min-width: 160px;
+        }
+
+        .dropdown-content a {
+            color: black;
+            display: block;
+            text-decoration: none;
+            font-size: large;
+            padding: 20px 6px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: grey;
+        }
+
+        .dropdown:hover .dropdown-content {
+            color: black;
+            display: block;
+        }
+
+        .column {
+            float: left;
+            width: 30%;
+            padding: 12px;
+            justify-content: left;
+        }
+
+        .row::after {
+            content: " ";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <h1><span class="fa fa-design" style="background-color: aliceblue; color: black;border-radius: 20px; padding:0px 3px;;">D</span> Designs</h1>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <div class="dropdown">
+                        <li><a href="#abc">Home</a></li>
+                        <div class="dropdown-content">
+                            <a href="#">ABOUT</a>
+                            <a href="#">TECHNOLOGIES</a>
+                            <a href="#">SKILLS REQUIRED</a>
+                        </div>
+                    </div>
+                    <li><a href="#abc">About</a></li>
+                    <li><a href="#abc">Contact</a></li>
+                    <li><a href="#abc">Help</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main1>">
+            <div class="img1">
+                <img src="D:/WEB%20DEVELOPER/CSS%20IMG/pexels-knownasovan-57690.jpg" alt="Graphic design" width=300>
+                <img src="file:///D:/WEB%20DEVELOPER/CSS%20IMG/pexels-olly-1050312.jpg" alt="fashion design" width=300>
+                <img src="file:///D:/WEB%20DEVELOPER/CSS%20IMG/pexels-curtis-adams-1694007-6510951.jpg"
+                    alt="interior design" width=300>
+                <img src="file:///D:/WEB%20DEVELOPER/CSS%20IMG/pexels-junior-teixeira-1064069-2047905.jpg"
+                    alt="Web design" width=300>
+            </div>
+            <div class="content">
+                <h1>The Designs</h1>
+                <h2>Design is a broad field encompassing various disciplines, each with its unique focus, tools, and
+                    methodologies. Below are some of the most common types of design:</h2>
+                <h2>Different Types of Design: A Quick Guide</h2>
+                <p>Design is everywhere! From the clothes you wear to the apps you use, it plays a huge role in our
+                    lives. Let's break down some of the main types of design:</p>
+                <h2>Design Focused on Visuals</h2>
+                <p>Graphic Design: This is about creating eye-catching images, like logos, posters, or social media
+                    posts. Think of it as using pictures and words to tell a story.
+                    <br>UI/UX Design: Ever wondered why some apps are easy to use while others feel like a puzzle? This
+                    is where UI/UX design comes in. It's all about making digital products look good and work smoothly.
+                    <br>Fashion Design: This is the art of creating stylish clothes and accessories. It's about
+                    combining creativity with practicality.
+                    <br>Interior Design: Imagine transforming a space into a beautiful and functional room. That's
+                    interior design! It's about making places feel good to be in.
+                    <br>Web Design: This is about crafting websites that are both attractive and easy to navigate. It's
+                    like building a digital home.
+                </p>
+                <h2>Design Focused on Objects</h2>
+                <p>Industrial Design: Ever admired the sleek look of a new gadget? Industrial designers create the shape
+                    and feel of products, from electronics to furniture.
+                    <br>Product Design: This is similar to industrial design but with a stronger focus on how people
+                    will use the product. It's about creating things that solve problems.
+                </p>
+                <h2>Design Focused on Systems</h2>
+                <p>Service Design: Have you ever had a great customer service experience? Service design is about
+                    planning how people interact with businesses or services to make it as smooth as possible.
+                    Environmental Design: This is about shaping the world around us, from designing parks to planning
+                    entire cities. It's about creating spaces that people love.
+                    Remember, these are just a few examples, and there are many other types of design out there! Each
+                    one uses different skills and tools, but they all share a common goal: creating something that is
+                    both beautiful and functional.</p>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+
+        <div class:content2>
+            <h3 style="text-decoration: underline;">Support</h3>
+            <a href="rahathsufiya454@gmail.com" style="color: aliceblue;">Email: rahathsufiya454@gmail.com</a>
+            <p>Contact me: 9652489454</p>
+        </div>
+        <div>
+
+        </div>
+        <div class="row">
+            <div class="column">
+                <h2>Column</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus
+                    venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget
+                    aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque
+                    tortor
+                    sed accumsan convallis.</p>
+            </div>
+
+            <div class="column">
+                <h2>Column</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus
+                    venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget
+                    aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque
+                    tortor
+                    sed accumsan convallis.</p>
+            </div>
+            <div class="column">
+                <h2>Column</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus
+                    venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget
+                    aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque
+                    tortor
+                    sed accumsan convallis.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

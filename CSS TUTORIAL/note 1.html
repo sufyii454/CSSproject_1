@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav2_full {
+            display: ruby-text;
+        }
+
+        .nav2_left {
+            margin: 0%;
+        }
+
+        .nav2_right li {
+            display: inline-block;
+            list-style-type: none;
+            margin: 6px;
+            padding: 6px 6px;
+            background-color: grey;
+            color: aliceblue;
+        }
+
+        .nav2_right ul {
+            margin: 0;
+        }
+
+        .list1 li:link,
+        li:visited {
+            background-color: grey;
+            color: black;
+            margin: 0%;
+            padding: 6px;
+        }
+
+        .list1 li:hover {
+            background-color: black;
+            color: aliceblue;
+        }
+
+        .list1 ul {
+            margin: 0px;
+            padding: 0px;
+            text-decoration: none;
+        }
+
+        li.color {
+            list-style-type: none;
+            display: inline-block;
+            background-color: yellow;
+            color: black;
+            padding: 15px;
+        }
+
+        .color {
+            margin: 0%;
+            padding: 20px;
+            background-color: yellow;
+        }
+
+        .center1 {
+            padding: 20px;
+            margin: auto;
+            border: 3px solid green;
+            text-align: center;
+            width: 50%;
+        }
+
+        .floatleft {
+            float: left;
+            border: 2px solid red;
+            background-color: rgb(247, 112, 112);
+        }
+
+        .floatright {
+            float: right;
+            border: 2px solid green;
+            background-color: rgb(44, 185, 44);
+        }
+
+        .img1 .imga {
+            position: relative;
+            display: inline-block;
+            border-color: black;
+            opacity: 0.3;
+        }
+
+        .img1-content {
+            position: absolute;
+            display: none;
+            opacity: 1;
+        }
+
+        .img1-content:hover {
+            display: block;
+            box-shadow: black;
+            
+        }
+
+        .img1 .imgh {
+            opacity: 1;
+        }
+
+        .img1:hover .img1-content {
+            width: 25%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav2_full">
+        <nav class="nav2_left">
+            <h1>ULTRAEDIT</h1>
+        </nav>
+        <nav class="nav2_right">
+            <ul>
+                <li class="item">Product</li>
+                <li class="item">Pricing</li>
+                <li class="item">Resources</li>
+                <li class="item">About us</li>
+                <li class="item">security and compliance</li>
+                <li class="item">icon</li>
+            </ul>
+        </nav>
+    </div>
+    <hr>
+    <div class="list1">
+        <ul style="background-color: grey" ,"color:black";>
+            <li class="item" style="background-color: green;">Home</li>
+            <li class="item">About</li>
+            <li class="item">Contact</li>
+            <li class="item">Support</li>
+            <li class="item">Product</li>
+        </ul>
+    </div>
+    <h1>Horizontal Navigation Links</h1>
+    <p>By default, list items are displayed vertically. In this example we use display: inline-block to display them
+        horizontally (side by side).</p>
+    <p>
+        Note: If you resize the browser window, the links will automatically break when it becomes too crowded.
+    </p>
+    <div class="color">
+        <ul>
+            <li><a href="who">Home</a></li>
+            <li><a href="abc">News</a></li>
+            <li><a href="abc">Contact</a></li>
+            <li><a href="abc">About</a></li>
+        </ul>
+    </div>
+    <h1>Center Align Elements</h1>
+    <p>To horizontally center a block element (like div), use margin: auto;</p>
+    <div class="center1">
+        <p>Hello World!</p>
+    </div>
+    <div class="floatleftandright">
+        <div class="floatleft">
+            <h1>float left</h1>
+        </div>
+        <div class="floatright">
+            <h1>float right</h1>
+        </div>
+    </div>
+    <hr>
+
+    <div class="img1">
+        <img src="C:\Users\rsufi\Downloads\abcd (1).jpg" class="imga">
+        <div class="img1-content">
+            <img src="C:/Users/rsufi/Downloads/abcd%20(2).jpg" class="imgh">
+        </div>
+    </div>
+    <hr>
+
+</body>
+
+</html>
